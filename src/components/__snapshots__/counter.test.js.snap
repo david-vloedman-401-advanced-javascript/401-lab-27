@@ -10,12 +10,14 @@ exports[`<Counter /> renders right 1`] = `
   />
   <br />
   <button
+    id="buttonup"
     onClick={[Function]}
   >
     Increment
   </button>
   <br />
   <button
+    id="buttondown"
     onClick={[Function]}
   >
     Decrement
