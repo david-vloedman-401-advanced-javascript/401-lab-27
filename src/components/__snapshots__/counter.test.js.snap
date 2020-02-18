@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Counter /> renders right 1`] = `
+<div>
+  <h3>
+    Racecar
+  </h3>
+  <input
+    onChange={[Function]}
+  />
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    Increment
+  </button>
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    Decrement
+  </button>
+  <h2
+    className="negative"
+  >
+    0
+  </h2>
+  <input
+    onChange={[Function]}
+  />
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    Reset Counter
+  </button>
+</div>
+`;
