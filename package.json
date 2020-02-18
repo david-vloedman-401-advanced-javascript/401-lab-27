@@ -1,23 +1,38 @@
 {
-  "name": "class-02",
+  "name": "class-26-demo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs",
-    "lib": "lib"
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "node-sass": "^4.13.1",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-scripts": "3.0.1"
+  },
+  "devDependencies": {
+    "typescript": "3.3.3"
   },
   "scripts": {
-    "test": "jest --verbose --coverage",
-    "lint": "eslint '**/*.js'",
-    "test-watch": "jest --watchAll --verbose --coverage",
-    "start": "node index.js",
-    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
-  "keywords": [],
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david-vloedman-401-advanced-javascript/401-lab-27.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "jest": "^24.9.0"
-  }
+  "bugs": {
+    "url": "https://github.com/david-vloedman-401-advanced-javascript/401-lab-27/issues"
+  },
+  "homepage": "https://github.com/david-vloedman-401-advanced-javascript/401-lab-27#readme",
+  "description": ""
 }

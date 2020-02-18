@@ -1,0 +1,33 @@
+$background: rgb(176, 184, 169);
+$text-color: rgb(13, 32, 7);
+$body-background: rgb(213, 224, 214);
+$postive-color: green;
+$negative-color: red;
+
+
+body 
+{ 
+font-family: sans-serif;
+text-align: center;
+color:$text-color;
+background-color:$body-background;
+
+}
+
+.header{  
+  background-color: $background;  
+}
+
+.postive{
+  color: $postive-color;
+}
+
+button{
+  margin: 8px;
+  background-color: $background;
+  border: none;
+}
+
+.negative{
+  color: $negative-color;
+}
