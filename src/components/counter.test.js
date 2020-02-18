@@ -9,7 +9,7 @@ Enzyme.configure({ adapter: new Adapter() });
 describe('<Counter />', () => {
   it('is alive at application start', () => {
     let app = shallow(<Counter />);
-    expect(app.find('form').exists()).toBeTruthy();
+    expect(app.find('#buttonup').exists()).toBeTruthy();
   });
 
   it('increases number on click of increment', () => {
@@ -17,14 +17,14 @@ describe('<Counter />', () => {
     let buttonup = app.find('#buttonup');
     let buttondown = app.find('#buttondown');
     buttonup.simulate('click');
-    expect(app.state('number')).toEqual(1);
+    expect(app.state('count')).toEqual(1);
     buttonup.simulate('click');
-    expect(app.state('number')).toEqual(2);
+    expect(app.state('count')).toEqual(2);
 
     buttondown.simulate('click');
-    expect(app.state('number')).toEqual(1);
+    expect(app.state('count')).toEqual(1);
     buttondown.simulate('click');
-    expect(app.state('number')).toEqual(0);
+    expect(app.state('count')).toEqual(0);
   });
 
   it('renders right', () => {

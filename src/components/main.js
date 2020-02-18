@@ -1,6 +1,6 @@
 import React from "react";
 
-class Main extends React.Component {
+class Counter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -47,9 +47,9 @@ class Main extends React.Component {
         <h3>{this.state.words}</h3>
         <input onChange={this.handleWord} />
         <br />
-        <button onClick={this.handleClickUp}>Increment</button>
+        <button id="buttonup" onClick={this.handleClickUp}>Increment</button>
         <br />
-        <button onClick={this.handleClickDown}>Decrement</button>
+        <button id="buttondown" onClick={this.handleClickDown}>Decrement</button>
         <h2 className={this.state.count > 0 ? "postive" : "negative"}>
           {this.state.count}
         </h2>
@@ -61,4 +61,4 @@ class Main extends React.Component {
   }
 }
 
-export default Main;
+export default Counter;
